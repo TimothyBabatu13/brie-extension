@@ -51,7 +51,9 @@
     "build:firefox:production": "pnpm set-global-env CLI_DEV=false CLI_FIREFOX=true CLI_ENV=production && pnpm base-build"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "html2canvas": "^1.4.1",
+    "node-fetch": "^3.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "uuid": "^11.0.3",
