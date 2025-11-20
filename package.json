@@ -1,6 +1,6 @@
 {
   "name": "brie-extension",
-  "version": "0.5.4",
+  "version": "0.5.27",
   "description": "report bugs 10x faster",
   "license": "Apache-2.0",
   "contributors": [
@@ -51,13 +51,16 @@
     "build:firefox:production": "pnpm set-global-env CLI_DEV=false CLI_FIREFOX=true CLI_ENV=production && pnpm base-build"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "html2canvas": "^1.4.1",
+    "node-fetch": "^3.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "uuid": "^11.0.3",
     "webextension-polyfill": "^0.12.0"
   },
   "devDependencies": {
+    "@types/webextension-polyfill": "^0.12.0",
     "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.20.0",
